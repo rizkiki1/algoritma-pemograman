@@ -1,0 +1,22 @@
+ALGORITMA Total_Pembayaran
+{ Tujuan  : Menghitung subtotal dan total pembayaran satu transaksi
+  Masukan : harga_satuan, jumlah_barang, biaya_layanan
+  Keluaran: subtotal dan total }
+
+DEKLARASI
+   harga_satuan   : real      { harga untuk satu barang }
+   jumlah_barang  : integer   { banyaknya barang yang dibeli }
+   biaya_layanan  : real      { biaya tambahan transaksi }
+   subtotal       : real      { harga_satuan * jumlah_barang }
+   total          : real      { subtotal + biaya_layanan }
+
+DESKRIPSI
+   read(harga_satuan)
+   read(jumlah_barang)
+   read(biaya_layanan)
+
+   subtotal <- harga_satuan * jumlah_barang
+   total    <- subtotal + biaya_layanan
+
+   write(subtotal)
+   write(total)
